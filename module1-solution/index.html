@@ -1,27 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="LunchCheck">
   <head>
     <title>Lunch Checker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="scripts/angular.min.js"></script>
+     <script src="scripts/app.js"></script>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
       .message { font-size: 1.3em; font-weight: bold; }
+      .green{color: green;}
+      .red{color:red;}
+      .greenBorder{border-color: green;}
+      .redBorder{border-color: red;}
     </style>
   </head>
 <body>
-   <div class="container">
+   <div class="container" ng-controller="LunchCheckController">
      <h1>Lunch Checker</h1>
-
          <div class="form-group">
-             <input id="lunch-menu" type="text"
+             <input id="lunch-menu" type="text" ng-model="lunchItems"
+              ng-class="{greenBorder: myColor == 'green', redBorder: myColor == 'red'}"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control">
+             <span>Empty items i.e. , , will not be considered toward the count of the lunch items</span>
          </div>
-         <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
+          <div class="form-group">
+             <button class="btn btn-default" ng-click="checkIfTooMuch();">Check If Too Much</button>
          </div>
          <div class="form-group message">
-           <!-- Your message can go here. -->
+           <span ng-class="{green: myColor == 'green', red: myColor == 'red'}">{{userMessage}}</span>
+
          </div>
    </div>
 
