@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" ng-app="ShoppingListCheckOff">
+  <head>
+    <title>Shopping List Check Off</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+      <link rel="stylesheet" href="styles/myStyles.css">
+  </head>
+<body>
+  <div class="container">
+  <h1>Shopping List Check Off</h1>
+
+  <!-- <div class="row">
+
+    <!-- To Buy List -->
+    <div class="col-md-6" ng-controller='ToBuyShoppingController as shoppingList'>
+     <h2>To Buy:</h2>
+     <ul>
+      <li ng-repeat="item in shoppingList.items">{{$index + 1}}. Buy {{item.quantity}} {{item.name}}s
+       <button ng-click="shoppingList.removeItem($index);">Bought</button>
+       </li>
+     </ul>
+     <div class="emptyMessage" ng-if="shoppingList.items.length <= 0">Everything is bought!</div>
+    </div>
+
+    <!-- Already Bought List -->
+   <div class="col-md-6" ng-controller='AlreadyBoughtShoppingController as boughtList'>
+     <h2>Already Bought:</h2>
+     <ul>
+      <li ng-repeat="item in boughtList.itemsBought">{{$index + 1}}. Bought  {{item.quantity}}  {{item.name}}s
+       </li>
+     </ul>
+     <div class="emptyMessage" ng-if="boughtList.items.length >= 5">Nothing bought yet!</div>
+    </div>
+  <!--  <div id="shoppingList" ng-controller='ShoppingListController as ShoppingList'>
+     <h3>To Buy </h3>
+     <input type="text" ng-model="ShoppingList.itemName" placeholder="item name">
+     <input type="text" ng-model="ShoppingList.itemQuantity" placeholder="quantity">
+     <button ng-click="ShoppingList.addItem();">Add Item</button>
+     <ol>
+       <li ng-repeat="item in ShoppingList.items">
+         {{ item.quantity }} of {{ item.name }}
+         <button ng-click="ShoppingList.removeItem($index);">Remove Item</button>
+       </li>
+     </ol>
+     <div class="error">Error: {{list1.errorMessage}}</div>
+   </div>
+
+
+   <div id="BoughtList" ng-controller='BoughtListController as BoughtList'>
+     <h3>Already Bought #2 (limited to 3 items)</h3>
+     <input type="text" ng-model="BoughtList.itemName" placeholder="item name">
+     <input type="text" ng-model="BoughtList.itemQuantity" placeholder="quantity">
+     <button ng-click="BoughtList.addItem();">Add Item</button>
+     <ol>
+       <li ng-repeat="item in BoughtList.items">
+         {{ item.quantity }} of {{ item.name }}
+         <button ng-click="BoughtList.removeItem($index);">Remove Item</button>
+       </li>
+     </ol>
+     <div class="error">Error: {{list2.errorMessage}}</div>
+   </div> -->
+</div>
+
+</body>
+<script src="script/angular.min.js"></script>
+<script src="script/app.js"></script>
+</html>
