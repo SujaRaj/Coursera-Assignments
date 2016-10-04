@@ -1,0 +1,11 @@
+<h3>List of Menu Categories</h3>
+<ol>
+
+  <li ng-repeat="category in list.items">
+   <div class="list-group">
+    <h5 class="list-group-item-heading initialism">{{ category.name }} </h5>
+    <h6>{{category.short_name}}</h6>
+    <p class="list-group-item-text">{{category.description}}</p>
+    <button ng-click="list.onRemove({index: $index});">Don't want this one!</button>
+</li>
+</ol>

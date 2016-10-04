@@ -63,5 +63,5 @@ Here is what you will need to do to complete the assignment:
 ## **IMPORTANT REMINDERS:**
 * Closely follow the submission guidelines for this assignment on Coursera.org
 * Make **sure** you provide the correct URL in your submission (it should be GitHub<b>.io</b>, *not* GitHub<b>.com</b>)
-* Make **sure** to TEST your assignment not just on your local machine, but ALSO once you deploy it on GitHub, using the URL you are providing as part of your submission.
+* Make **sure** to TEST your assignment not just on your local machine, but ALgit statSO once you deploy it on GitHub, using the URL you are providing as part of your submission.commit
 * This assignment will be peer-reviewed (and graded). The guidance will be given such that if submission instructions are not followed, the assignment is to be failed. Following instructions is very much part of software development. After all, that's what software requirements are - instructions to follow.

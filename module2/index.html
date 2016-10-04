@@ -30,7 +30,7 @@
       <li ng-repeat="item in boughtList.itemsBought">{{$index + 1}}. Bought  {{item.quantity}}  {{item.name}}s
        </li>
      </ul>
-     <div class="emptyMessage" ng-if="boughtList.items.length >= 5">Nothing bought yet!</div>
+     <div class="emptyMessage" ng-if="boughtList.itemsBought.length<=0">Nothing bought yet!</div>
     </div>
   <!--  <div id="shoppingList" ng-controller='ShoppingListController as ShoppingList'>
      <h3>To Buy </h3>
